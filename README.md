@@ -36,15 +36,14 @@ Created DataLoaders with batch size of 32.
 
 ### 3. Model Training
 Initialized a cnn_learner with resnet34 as the backbone.
-
 Trained the model for 2 epochs using fine_tune(2).
-
 learn = cnn_learner(dls, resnet34, metrics=accuracy)
 learn.fine_tune(2)
+
 ### 4. Model Export
 Exported the trained model as 42hackathon.pkl.
-
 learn.export('42hackathon.pkl')
+
 ### 5. Inference
 Loaded the model using load_learner.
 
